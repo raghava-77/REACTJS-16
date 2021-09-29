@@ -1,13 +1,18 @@
 import React from 'react'
-
- function App(){
-    return <> 
+ import Navbar from "./logingpage/Navbar";
+import Loging from "./logingpage/loging/Loging";
+import Produtu from './logingpage/Produtu';
+function App(){
+   return( <>
+    <Navbar /> 
+   <Loging />
+   <Produtu />
    
-    <h1 style={{"background-color":'red'}} >hi hello how are you </h1>
-    
+   {/* <Parent /> */}
 
-      
-      
-       </>
+   </>
+   );
 }
 export default App;
+
+

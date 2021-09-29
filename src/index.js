@@ -1,4 +1,5 @@
-
 import ReactDom from 'react-dom'
-import App from './App'
-ReactDom.render(<App />,document.getElementById('root'))
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import  App from './App'
+
+ReactDom.render(<App/>,document.getElementById("root"))
