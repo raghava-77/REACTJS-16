@@ -1,4 +1,4 @@
-import React, { Component, forwardRef } from 'react'
+import React, { Component,  } from 'react'
 
  class Loging extends Component {
     render() {
