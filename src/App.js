@@ -1,12 +1,10 @@
 import React from 'react'
- import Navbar from "./logingpage/Navbar";
-import Loging from "./logingpage/loging/Loging";
-import Produtu from './logingpage/Produtu';
+// import Tablestate from './state/table/Tablestate'
+import Constrctor from './eventandbinding/Constrctor'
 function App(){
    return( <>
-    <Navbar /> 
-   <Loging />
-   <Produtu />
+    {/* <Tablestate /> */}
+    <Constrctor />
    </>
    );
 }
