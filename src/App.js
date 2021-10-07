@@ -1,12 +1,11 @@
 import React from 'react'
-// import Tablestate from './state/table/Tablestate'
-// import Constrctor from './eventandbinding/Constrctor'
-// import Emp from './tables/Emp'
-import Emp1 from './tables/empdata2/Emp1'
+ import Pre from './conditionrendering/Pre'
+import Image from './conditionrendering/Image';
 function App(){
    return( <>
-    {/* <Tablestate /> */}
-    <Emp1 />
+
+  <Pre /> 
+  <Image />
    </>
    );
 }
