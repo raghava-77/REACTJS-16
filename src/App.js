@@ -1,11 +1,8 @@
 import React from 'react'
- import Pre from './conditionrendering/Pre'
-import Image from './conditionrendering/Image';
+import Register from './formhandling/regi/Register';
 function App(){
    return( <>
-
-  <Pre /> 
-  <Image />
+    <Register />
    </>
    );
 }
