@@ -41,7 +41,7 @@ export class Register extends Component {
                     </div>
                     <div className="form-group">
                       <input
-                        type="text"
+                        type="Password"
                         className="form-control"
                         placeholder="Password"
                         name="password"

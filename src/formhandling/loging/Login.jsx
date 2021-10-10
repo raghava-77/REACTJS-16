@@ -22,9 +22,9 @@ class Login extends Component {
         <pre>{JSON.stringify(this.state)}</pre>
         <form>
           <label>Email</label>
-          <input type="text" onChange={this.emailHandler} /> <br />
+          <input type="Email" onChange={this.emailHandler} /> <br />
           <label>Password</label>
-          <input type="text" onChange={this.passwordHandler} /> <br />
+          <input type="Password" onChange={this.passwordHandler} /> <br />
           <br />
         </form>
       </div>
