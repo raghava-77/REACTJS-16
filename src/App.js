@@ -1,21 +1,25 @@
 import React, { Component } from 'react'
-import Comp1 from "./props-drilling/Comp1"
-
+import Navbar from './Routing/Navbar'
+import Register from './formhandling/regi/Register'
+import Login from './formhandling/loging/Login'
+import Emp1 from './tables/empdata2/Emp1'
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
  class App extends Component {
-    state={
-       mass:{
-             Name:"Raghava",
-             Age:55
-       }
-    }
+   
    render() {
       return (
-         <div>
-            <pre> Name: {this.state.mass.name}</pre>
-        <pre>age: {this.state.mass.project}</pre>
-         <Comp1 pass={this.state.mass}/>
-         </div>
-      )
+         <React.Fragment>
+         <Router>
+           <Navbar />
+           <hr />
+           <Switch>
+             <Route path="/register" component={Register} />
+             <Route path="/login" component={Login} />
+             <Route path="/data" component={Emp1} />
+           </Switch>
+         </Router>
+       </React.Fragment>
+      );
    }
 }
 
