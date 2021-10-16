@@ -1,28 +1,25 @@
-import React, { Component } from 'react'
-import Navbar from './Routing/Navbar'
-import Register from './formhandling/regi/Register'
-import Login from './formhandling/loging/Login'
-import Emp1 from './tables/empdata2/Emp1'
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
- class App extends Component {
-   
-   render() {
-      return (
-         <React.Fragment>
-         <Router>
-           <Navbar />
-           <hr />
-           <Switch>
-             <Route path="/register" component={Register} />
-             <Route path="/login" component={Login} />
-             <Route path="/data" component={Emp1} />
-           </Switch>
-         </Router>
-       </React.Fragment>
-      );
-   }
+import React from "react";
+
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
+import Navbar from "./Navbar/Navbar";
+import User from "./Users/User";
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <Router>
+          <nav>
+            <Navbar />
+
+            <Switch>
+              <Route path="/user" component={User} />
+            </Switch>
+          </nav>
+        </Router>
+      </>
+    );
+  }
 }
-
-export default App
-
-
+export default App;
