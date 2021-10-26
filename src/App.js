@@ -1,9 +1,9 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import Navbar from './ReactHooks/Navbar/Navbar';
-import Counter from "./ReactHooks/Counter";
-import Message from "./ReactHooks/Message";
+import Navbar from "./React - UseState-Object.jsx/Navber/Navber";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Cart from "./React - UseState-Object.jsx/Cart";
 class App extends React.Component {
   render() {
     return (
@@ -11,8 +11,7 @@ class App extends React.Component {
         <Router>
           <Navbar />
           <Switch>
-            <Route path="/counter" component={Counter} />
-            <Route path="/message" component={Message} />
+            <Route path="/cart" component={Cart} />
           </Switch>
         </Router>
       </>
